@@ -34,3 +34,8 @@ enableRobotsTXT = true
 [params]
   defaultContentLanguage = "zh-cn"  # 中文环境
   hasCJKLanguage = true             # 开启中日韩字符支持（解决中文分类 URL 编码问题）
+
+baseURL = "https://Andrea-zH.github.io/"
+languageCode = "zh-cn"
+title = "Andrea's Blog"
+staticDir = "static"  # 确保这行存在，默认就是 static
