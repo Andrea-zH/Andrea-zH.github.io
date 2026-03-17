@@ -1,0 +1,36 @@
+baseURL = "https://Andrea-zH.github.io/"
+languageCode = "zh-CN"
+title = "HELLO-WORLD"
+theme = "LoveIt"
+
+
+# 作者
+[author]
+  name = "Andrea"
+
+# 分页
+paginate = 10
+
+# 默认内容语言
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+
+# 启用 GitHub Pages 推荐输出格式
+enableRobotsTXT = true
+
+# 【核心】启用分类和标签功能（Hugo 原生支持）
+[taxonomies]
+  category = "categories"  # 固定写法：左边是单数（category），右边是复数（categories）
+  tag = "tags"             # 可选：标签功能，和分类搭配使用（不用可删掉这行）
+
+# 【可选】优化分类/文章的 URL 格式（让 URL 更美观）
+[permalinks]
+  # 分类页面 URL：比如「美食游记」分类 → /categories/美食游记/
+  categories = "/categories/:slug/"
+  # 文章页面 URL：比如「淮安」文章 → /posts/淮安/（保持和你现有配置一致）
+  posts = "/posts/:slug/"
+
+# 【可选】设置分类目录的语言（避免中文乱码）
+[params]
+  defaultContentLanguage = "zh-cn"  # 中文环境
+  hasCJKLanguage = true             # 开启中日韩字符支持（解决中文分类 URL 编码问题）
