@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "测试.md",
+                "file": "如何上传博客.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "测试"
+              "title": "如何上传博客"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "如何上传博客.md",
+                "file": "测试/测试.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "如何上传博客"
+              "title": "测试"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,28 +197,29 @@
       "bases:新建数据库": false
     }
   },
-  "active": "170362d1c087ce0a",
+  "active": "3be66f0e9cebae6f",
   "lastOpenFiles": [
-    "hello-world.md",
-    "如何上传博客.md",
-    "测试.md",
-    "6eef39c66058260f26776c54ad17240.jpg",
     "春菜/index.md",
-    "caijia.jpg",
-    "春菜/1.jpg",
+    "如何上传博客.md",
+    "春菜/7.jpg",
+    "春菜/8.jpg",
+    "测试/测试.md",
+    "测试/mmm.jpg",
     "春菜/caijia.jpg",
+    "春菜/chengping.jpg",
+    "测试",
     "第一篇博客.md",
+    "第一次尝试.md",
     "辅助工具.md",
+    "caijia.jpg",
+    "6eef39c66058260f26776c54ad17240.jpg",
+    "hello-world.md",
+    "春菜/1.jpg",
     "淮安/index.md",
     "淮安/22a4683bb5bb29868bf0c62c2fcf931.jpg",
     "春菜/6.jpg",
-    "春菜/5.jpg",
-    "春菜/4.jpg",
-    "春菜/3.jpg",
-    "春菜/2.jpg",
     "春菜",
     "上海/上海.md",
-    "第一次尝试.md",
     "淮安.md",
     "淮安1/index.md",
     "淮安1/淮安",
@@ -235,7 +235,6 @@
     "hello，world/淮安/新建 文本文档.txt",
     "hello，world/淮安.md",
     "hello，world/淮安",
-    "hello，world/新建文件夹",
     "hello-hugo.md",
     "未命名.md"
   ]
