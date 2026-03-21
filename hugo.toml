@@ -1,6 +1,6 @@
 baseURL = "https://Andrea-zH.github.io/"
 languageCode = "zh-CN"
-title = "Andrea's Blog"
+title = "Andrea's Garden"
 theme = "LoveIt"
 
 # 启用 emoji
@@ -103,9 +103,9 @@ enableRobotsTXT = true
       # 主页显示头像的 URL
       avatarURL = ""
       # 主页显示的网站标题
-      title = "Andrea's Blog"
+      title = "Andrea's Garden"
       # 主页显示的网站副标题
-      subtitle = "记录生活，分享思考"
+      subtitle = "且将新火试新茶，诗酒趁年华"
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
@@ -162,6 +162,12 @@ enableRobotsTXT = true
     # 评论系统（暂时禁用）
     [params.page.comment]
       enable = false
+    # 第三方库配置
+    [params.page.library]
+      [params.page.library.css]
+        # 自定义样式
+        customCSS = "css/_custom.css"
+      [params.page.library.js]
 
   # TypeIt 打字机效果配置
   [params.typeit]
