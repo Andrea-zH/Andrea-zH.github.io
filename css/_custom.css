@@ -21,7 +21,7 @@ body {
 /* 左侧导航链接样式 */
 .header-nav {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -30,11 +30,30 @@ body {
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'STSong', serif;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    padding: 0.3rem 0;
+    position: relative;
+}
+
+.header-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
 }
 
 .header-nav a:hover {
     color: #667eea;
+}
+
+.header-nav a:hover::after {
+    width: 100%;
 }
 
 /* 背景装饰 */
