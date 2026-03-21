@@ -2,7 +2,7 @@
 date = '2026-03-09T20:30:18+08:00'
 draft = false
 title = '淮安'
-categories = ["hello, world"]
+categories = ["hello-world"]
 +++
 
 ### 引言
