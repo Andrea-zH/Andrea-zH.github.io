@@ -105,14 +105,14 @@ enableRobotsTXT = true
       # 主页显示的网站标题
       title = "Andrea's Garden"
       # 主页显示的网站副标题
-      subtitle = "且将新火试新茶，诗酒趁年华"
+      subtitle = ""
       # 是否为副标题显示打字机动画
-      typeit = true
+      typeit = false
       # 是否显示社交账号
       social = true
     # 主页文章列表
     [params.home.posts]
-      enable = true
+      enable = false
       # 主页每页显示文章数量
       paginate = 6
 
