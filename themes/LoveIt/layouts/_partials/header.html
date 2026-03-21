@@ -1,7 +1,7 @@
 {{- /* Desktop header */ -}}
 <header class="desktop" id="header-desktop">
     <div class="header-wrapper">
-        <div class="header-title">
+        <div class="header-title" style="display: none;">
 {{- /* 新增：文章分类导航 */ -}}
 <div class="header-nav">
   <a href="{{ .Site.BaseURL }}">首页</a>
@@ -94,7 +94,7 @@
 <header class="mobile" id="header-mobile">
     <div class="header-container">
         <div class="header-wrapper">
-            <div class="header-title">
+            <div class="header-title" style="display: none;">
                 <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
                     {{- with .Site.Params.header.title -}}
                         {{- with .logo -}}
