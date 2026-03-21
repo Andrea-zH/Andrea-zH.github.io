@@ -18,9 +18,23 @@ body {
     }
 }
 
-/* 隐藏桌面端左侧标题区域 */
-#header-desktop .header-title {
-    display: none !important;
+/* 左侧导航链接样式 */
+.header-nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.header-nav a {
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #667eea;
 }
 
 /* 背景装饰 */
