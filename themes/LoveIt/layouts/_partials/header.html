@@ -2,12 +2,6 @@
 <header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title" style="display: none;">
-{{- /* 新增：文章分类导航 */ -}}
-<div class="header-nav">
-  <a href="{{ .Site.BaseURL }}">首页</a>
-  <a href="{{ .Site.BaseURL }}posts/">所有文章</a>
-  <a href="{{ .Site.BaseURL }}categories/">文章分类</a>
-</div>
             <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
                 {{- with .Site.Params.header.title -}}
                     {{- with .logo -}}
