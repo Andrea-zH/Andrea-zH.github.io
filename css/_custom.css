@@ -6,6 +6,23 @@ body {
     min-height: 100vh;
 }
 
+/* 隐藏移动端菜单切换按钮（桌面端） */
+@media (min-width: 769px) {
+    #menu-toggle-mobile {
+        display: none !important;
+    }
+    
+    /* 隐藏移动端头部 */
+    #header-mobile {
+        display: none !important;
+    }
+}
+
+/* 隐藏桌面端左侧标题区域 */
+#header-desktop .header-title {
+    display: none !important;
+}
+
 /* 背景装饰 */
 body::before {
     content: "";
