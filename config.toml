@@ -1,4 +1,0 @@
-baseURL = "https://Andrea-zH.github.io/"
-languageCode = "zh-cn"
-title = "Andrea's Blog"
-staticDir = "static"  # 确保这行存在，默认就是 static
