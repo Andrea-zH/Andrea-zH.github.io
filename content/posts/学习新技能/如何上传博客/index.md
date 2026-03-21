@@ -1,6 +1,6 @@
 +++
 date = '2026-03-04T09:18:29+08:00'
-draft = true
+draft = false
 title = '如何上传博客'
 categories = ["学习新技能"]
 +++
