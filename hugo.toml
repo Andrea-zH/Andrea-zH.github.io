@@ -1,15 +1,20 @@
 baseURL = "https://Andrea-zH.github.io/"
 languageCode = "zh-CN"
-title = "HELLO-WORLD"
+title = "Andrea's Blog"
 theme = "LoveIt"
 
+# 启用 emoji
+enableEmoji = true
+# 启用 Git 信息
+enableGitInfo = true
 
 # 作者
 [author]
   name = "Andrea"
 
 # 分页
-paginate = 10
+[pagination]
+  pagerSize = 10
 
 # 默认内容语言
 defaultContentLanguage = "zh-cn"
@@ -18,24 +23,192 @@ hasCJKLanguage = true
 # 启用 GitHub Pages 推荐输出格式
 enableRobotsTXT = true
 
+# 菜单配置
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    pre = "<i class='fas fa-archives' aria-hidden='true'></i>"
+    name = "所有文章"
+    url = "/posts/"
+    title = ""
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    pre = "<i class='fas fa-tags' aria-hidden='true'></i>"
+    name = "标签"
+    url = "/tags/"
+    title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = "<i class='fas fa-folder-open' aria-hidden='true'></i>"
+    name = "分类"
+    url = "/categories/"
+    title = ""
+
 # 【核心】启用分类和标签功能（Hugo 原生支持）
 [taxonomies]
-  category = "categories"  # 固定写法：左边是单数（category），右边是复数（categories）
-  tag = "tags"             # 可选：标签功能，和分类搭配使用（不用可删掉这行）
+  category = "categories"
+  tag = "tags"
 
-# 【可选】优化分类/文章的 URL 格式（让 URL 更美观）
+# 【可选】优化分类/文章的 URL 格式
 [permalinks]
-  # 分类页面 URL：比如「美食游记」分类 → /categories/美食游记/
   categories = "/categories/:slug/"
-  # 文章页面 URL：比如「淮安」文章 → /posts/淮安/（保持和你现有配置一致）
   posts = "/posts/:slug/"
 
-# 【可选】设置分类目录的语言（避免中文乱码）
 [params]
-  defaultContentLanguage = "zh-cn"  # 中文环境
-  hasCJKLanguage = true             # 开启中日韩字符支持（解决中文分类 URL 编码问题）
+  # 网站默认主题 ["auto", "light", "dark"]
+  defaultTheme = "auto"
+  # 日期格式
+  dateFormat = "2006-01-02"
+  # 网站描述
+  description = "Andrea 的个人博客"
+  # 开启中日韩字符支持
+  hasCJKLanguage = true
 
-baseURL = "https://Andrea-zH.github.io/"
-languageCode = "zh-cn"
-title = "Andrea's Blog"
-staticDir = "static"  # 确保这行存在，默认就是 static
+  # 作者配置
+  [params.author]
+    name = "Andrea"
+    email = ""
+
+  # 头部导航栏配置
+  [params.header]
+    # 桌面端导航栏模式 ["fixed", "normal", "auto"]
+    desktopMode = "fixed"
+    # 移动端导航栏模式 ["fixed", "normal", "auto"]
+    mobileMode = "auto"
+
+  # 底部信息配置
+  [params.footer]
+    enable = true
+    # 是否显示 Hugo 和主题信息
+    hugo = true
+    # 是否显示版权信息
+    copyright = true
+    # 是否显示作者
+    author = true
+    # 网站创立年份
+    since = 2026
+    # 许可协议
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  # 主页配置
+  [params.home]
+    # RSS 文章数目
+    rss = 10
+    # 主页个人信息
+    [params.home.profile]
+      enable = true
+      # 主页显示头像的 URL
+      avatarURL = ""
+      # 主页显示的网站标题
+      title = "Andrea's Blog"
+      # 主页显示的网站副标题
+      subtitle = "记录生活，分享思考"
+      # 是否为副标题显示打字机动画
+      typeit = true
+      # 是否显示社交账号
+      social = true
+    # 主页文章列表
+    [params.home.posts]
+      enable = true
+      # 主页每页显示文章数量
+      paginate = 6
+
+  # 社交账号配置
+  [params.social]
+    GitHub = "Andrea-zH"
+    Email = ""
+    RSS = true
+
+  # 搜索配置
+  [params.search]
+    enable = true
+    # 搜索引擎类型 ["lunr", "algolia"]
+    type = "lunr"
+    # 文章内容最长索引长度
+    contentLength = 4000
+    # 搜索框占位提示
+    placeholder = "搜索..."
+    # 最大结果数目
+    maxResultLength = 10
+    # 结果内容片段长度
+    snippetLength = 50
+
+  # 文章页面全局配置
+  [params.page]
+    # 是否使用 lightgallery（图片灯箱）
+    lightgallery = true
+    # 是否使用 twemoji
+    twemoji = true
+    # 目录配置
+    [params.page.toc]
+      enable = true
+      keepStatic = false
+      auto = true
+    # 代码配置
+    [params.page.code]
+      copy = true
+      maxShownLines = 50
+    # 分享配置
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = false
+      Weibo = true
+      Telegram = true
+    # 评论系统（暂时禁用）
+    [params.page.comment]
+      enable = false
+
+  # TypeIt 打字机效果配置
+  [params.typeit]
+    # 打字速度（毫秒）
+    speed = 100
+    # 光标闪烁速度
+    cursorSpeed = 1000
+    # 光标字符
+    cursorChar = "|"
+
+# Hugo 解析文档配置
+[markup]
+  # 语法高亮
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+  # Goldmark 配置
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # 是否在文档中直接使用 HTML 标签
+      unsafe = true
+  # 目录设置
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+# 网站地图配置
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# 输出配置
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
