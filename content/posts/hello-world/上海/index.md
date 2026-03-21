@@ -2,7 +2,7 @@
 date = '2026-03-08T22:30:09+08:00'
 draft = false
 title = '上海'
-categories = ["学习新技能"]
+categories = ["Hello-World"]
 +++
 
 记一次上海之旅
