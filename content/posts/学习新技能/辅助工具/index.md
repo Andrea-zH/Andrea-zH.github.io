@@ -1,7 +1,8 @@
 +++
 date = '2026-03-04T09:18:29+08:00'
 draft = true
-title = 'Hello World'
+title = '辅助工具'
+categories = ["学习新技能"]
 +++
 
 
